@@ -12,9 +12,9 @@
 
 ### NIPM Executable name
 
-Edit *Set "NIPM=NIPackageManager25.0.0.exe"* with the NIPM fullname with extension
+Edit line *set "NIPM=NIPackageManager25.0.0.exe"* with the NIPM fullname with extension
 
 ### compareNumber Version required
 
-Edit *Set "compareNumber=25.0.0"* with required version - Same as HIPM executable
+Edit *set "compareNumber=25.0.0"* with required version - Same as HIPM executable
 
