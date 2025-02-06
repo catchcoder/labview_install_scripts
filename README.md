@@ -1,4 +1,4 @@
-# LabVIEW install script
+# LabVIEW for Windows install script
 
 ## Steps of the script
 
