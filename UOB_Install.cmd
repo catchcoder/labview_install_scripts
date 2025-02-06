@@ -31,13 +31,10 @@ if %regNumber% GEQ %compareNumber% (
 )
 
 :install
-endlocal
-REM Intall Labview
+REM Install Labview
 echo start /wait ./_Src/Install.exe --passive --accept-eulas --prevent-reboot
 echo start /wait ./Client/vlmclient.exe /q /acceptlicenses yes /group {524F9E9B-7126-4E97-B112-B54680D4D71A}
 
 REM NI-MAX and others require a reboot to complete the install
 PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('This computer must be restarted to complete the install', 'LabVIEW Install', 'Ok','Exclamation')
-pause
 popd
-
