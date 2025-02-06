@@ -16,5 +16,5 @@ Edit line *set "NIPM=NIPackageManager25.0.0.exe"* with the NIPM fullname with ex
 
 ### compareNumber Version required
 
-Edit *set "compareNumber=25.0.0"* with required version - Same as HIPM executable
+Edit line *set "compareNumber=25.0.0"* with required version - Same as NIPM executable
 
