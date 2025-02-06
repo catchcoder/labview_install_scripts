@@ -2,11 +2,13 @@ pushd %~dp0
 @echo off
 setlocal
 
-REM Define variables
-set "regKey=HKLM\SOFTWARE\National Instruments\NI Package Manager\CurrentVersion" # Registry location for NIPM
-set "regValue=Version" # Registry Key for NIPM version to check
+REM Define variables - chnage with each version
 set "NIPM=NIPackageManager25.0.0.exe" # Define executable for NIPM
 set "compareNumber=25.0.0" # Define version for NI Package Manager software
+
+REM Set variables
+set "regKey=HKLM\SOFTWARE\National Instruments\NI Package Manager\CurrentVersion" # Registry location for NIPM
+set "regValue=Version" # Registry Key for NIPM version to check
 
 REM Check if NI Package Manager is installed
 reg query "%regKey%" /v "%regValue%" >nul 2>&1
