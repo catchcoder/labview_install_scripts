@@ -2,7 +2,7 @@ pushd %~dp0
 @echo off
 setlocal
 
-REM Define variables - chnage with each version
+REM Define variables - change with each version
 set "NIPM=NIPackageManager25.0.0.exe" # Define executable for NIPM
 set "compareNumber=25.0.0" # Define version for NI Package Manager software
 
