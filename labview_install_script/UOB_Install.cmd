@@ -1,7 +1,7 @@
 @echo off
 set rootPath="%~dp0"
 pushd "%rootPath%"
-setlocal enableextensions enabledelayedexpansion
+setlocal enableextensions
 
 REM Define variables - change with each version
 set "NIPM=NIPackageManager25.0.0.exe" # Define executable for NIPM
