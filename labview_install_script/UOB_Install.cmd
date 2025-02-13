@@ -36,7 +36,13 @@ start /wait ./_Src/Install.exe --passive --accept-eulas --prevent-reboot
 REM Install NI LabVIEW
 start /wait ./Client/vlmclient.exe /q /acceptlicenses yes /groups "{524F9E9B-7126-4E97-B112-B54680D4D71A},{E1D7A7F4-06C1-4FD1-AAF5-607B03CFE294}"
 
-REM NI-MAX and other products require a reboot to complete the install
-PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('In order to finish the installation process, this computer needs to be restarted.' + [System.Environment]::NewLine + [System.Environment]::NewLine + 'If you need extra toolkits or drivers, we recommend using the National Instruments Package Manager application.', 'The LabVIEW installation has been successfully completed', 'Ok','Exclamation')"
+REM NI-MAX and other services require a reboot to complete the install
+PowerShell -Command "Add-Type -AssemblyName "^
+ "PresentationFramework;[System.Windows.MessageBox]::Show("^
+ "'This computer must be restarted to complete the install'"^
+ " + [System.Environment]::NewLine + [System.Environment]::NewLine"^
+ " + 'For additional toolkits and drivers please use the NI Package Manager application',"^
+ " 'LabVIEW Install',"^
+ " 'Ok','Exclamation')"
 
 popd
