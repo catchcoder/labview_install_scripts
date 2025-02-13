@@ -1,5 +1,6 @@
-pushd %~dp0
 @echo off
+set "apppath=%~dp0"
+pushd "%apppath%"
 setlocal
 
 REM Define variables - change with each version
