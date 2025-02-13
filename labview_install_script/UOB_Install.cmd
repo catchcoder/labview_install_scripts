@@ -1,7 +1,7 @@
 @echo off
-set "apppath=%~dp0"
-pushd "%apppath%"
-setlocal
+set rootPath="%~dp0"
+pushd %rootPath%
+setlocal enableextensions enabledelayedexpansion
 
 REM Define variables - change with each version
 set "NIPM=NIPackageManager25.0.0.exe" # Define executable for NIPM
@@ -45,5 +45,7 @@ PowerShell -Command "Add-Type -AssemblyName "^
  " + 'For additional toolkits and drivers please use the NI Package Manager application',"^
  " 'LabVIEW Install',"^
  " 'Ok','Exclamation')"
+
+endlocal
 
 popd
