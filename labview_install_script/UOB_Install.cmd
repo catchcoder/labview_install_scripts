@@ -1,6 +1,6 @@
 @echo off
 set rootPath="%~dp0"
-pushd %rootPath%
+pushd "%rootPath%"
 setlocal enableextensions enabledelayedexpansion
 
 REM Define variables - change with each version
