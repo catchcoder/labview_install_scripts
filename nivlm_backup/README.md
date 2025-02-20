@@ -1,6 +1,6 @@
 # Backup script to Run NIVLM every night
 
-Run this is a command windows
+Run this is a command windows to create a new task in the task scheduler
 
 ```sh
 schtasks /create /tn "NI VLM Backup" /tr "c:\backup\Backup-NiVLM.cmd" /sc daily /st 23:00 /ru "Username" 
